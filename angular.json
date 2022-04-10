@@ -103,9 +103,21 @@
             ],
             "scripts": []
           }
+        },
+        "lint": {
+          "builder": "@angular-eslint/builder:lint",
+          "options": {
+            "lintFilePatterns": [
+              "src/**/*.ts",
+              "src/**/*.html"
+            ]
+          }
         }
       }
     }
   },
-  "defaultProject": "fireship-inspired-noughts-and-crosses"
+  "defaultProject": "fireship-inspired-noughts-and-crosses",
+  "cli": {
+    "defaultCollection": "@angular-eslint/schematics"
+  }
 }
